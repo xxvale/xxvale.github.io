@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HannibalVerse</title>
+  <link rel="stylesheet" href="style.css"> <!-- Asegúrate de que el nombre sea correcto -->
+</head>
+
+  <header>
+    <h1>HANNIBAL</h1>
+    <p>Explora el oscuro y fascinante mundo del Dr. Hannibal Lecter</p>
+  </header>
+
+  <section class="section">
+    <h2 class="subtitle">Sinopsis</h2>
+    <p>
+      La serie Hannibal sigue la compleja y peligrosa relación entre Will Graham, un brillante perfilador del FBI con una mente empática capaz de entender a los asesinos, y el enigmático Dr. Hannibal Lecter, un afamado psiquiatra que en secreto es un asesino serial caníbal. A medida que Will se adentra en los crímenes más oscuros con la ayuda de Hannibal, su salud mental comienza a deteriorarse, sin saber que su confidente más cercano es el monstruo que está buscando. La historia combina suspenso psicológico, horror sofisticado y una estética visual impactante, explorando los límites entre la cordura, la maldad y la manipulación.
+    </p>
+  </section> 
+
+<h2 class="section-title">personajes Principales</h2>
+<section class="container">
+  <!-- Hannibal Lecter -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="hannibal.jpg" alt="Hannibal Lecter" />
+        <h3>Hannibal Lecter</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Psiquiatra brillante y asesino en serie. Refinado, peligroso, carismático.</p>
+        <button onclick="event.stopPropagation(); openModal('hannibal')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Will Graham -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Will_Graham.jpg" alt="Will Graham" />
+        <h3>Will Graham</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Investigador del FBI con una capacidad empática excepcional para entender a los asesinos. Lucha constantemente con su salud mental y su conexión con Hannibal.</p>
+        <button onclick="event.stopPropagation(); openModal('will')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jack Crawford -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="jack.jpg" alt="Jack Crawford" />
+        <h3>Jack Crawford</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Director de Ciencias del Comportamiento del FBI. Recluta a Will para ayudar en casos difíciles y, sin saberlo al principio, confía en Hannibal.</p>
+        <button onclick="event.stopPropagation(); openModal('jack')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alana Bloom -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images.jpg" alt="Alana Bloom" />
+        <h3>Alana Bloom</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Psiquiatra y profesora, colega de Will y Hannibal. Tiene una relación personal con ambos, lo que complica su rol profesional y emocional.</p>
+        <button onclick="event.stopPropagation(); openModal('alana')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beverly Katz -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="Abigail.jpg" alt="abigail hobbs" />
+        <h3>Abigail hobbs</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Hija de un asesino serial. Queda atrapada en la compleja red entre Will y Hannibal, quienes la ven casi como una hija.</p>
+        <button onclick="event.stopPropagation(); openModal('abigail')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Abigail Hobbs -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="bedelia.jpg" alt="Abigail Hobbs" />
+        <h3>Dr. Bedelia</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Psiquiatra de Hannibal. Inteligente y reservada, oculta muchos secretos sobre su relación con él y lo que sabe de sus crímenes.</p>
+        <button onclick="event.stopPropagation(); openModal('bedelia')">Más info</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="section-title">personajes Secundarios</h2>
+<section class="container">
+  <!-- Hannibal Lecter -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="1.jpg" alt="Hannibal Lecter" />
+        <h3>Freddie Lounds</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Periodista ambiciosa del sitio TattleCrime. Le interesa más el impacto de sus noticias que la ética, lo que la pone en peligro.</p>
+        <button onclick="event.stopPropagation(); openModal('freddie')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Jack Crawford -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="2.jpg" alt="Jack Crawford" />
+        <h3>Beverly Katz</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Forense del FBI especializada en análisis de fibras. Profesional y leal, trabaja junto a Will y desconfía de Hannibal.</p>
+        <button onclick="event.stopPropagation(); openModal('beverly')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alana Bloom -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="3.jpg" alt="Alana Bloom" />
+        <h3>Brian Zeller</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Parte del equipo forense del FBI. Suele aportar comentarios sarcásticos y análisis técnicos importantes en las investigaciones.</p>
+        <button onclick="event.stopPropagation(); openModal('zeller')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beverly Katz -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="4.jpg" alt="Beverly Katz" />
+        <h3>Jimmy Price</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Técnico del FBI experto en entomología y química. Trabaja en equipo con Beverly y Zeller, aportando datos clave en las escenas del crimen.</p>
+        <button onclick="event.stopPropagation(); openModal('jimmy')">Más info</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Abigail Hobbs -->
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="5.jpg" alt="peter bernardone" />
+        <h3>Peter Bernardone</h3>
+      </div>
+      <div class="flip-card-back">
+        <p>Hombre con discapacidad mental acusado injustamente de un crimen. Will empatiza con él y lo protege. Representa la fragilidad de la justicia.</p>
+        <button onclick="event.stopPropagation(); openModal('peter')">Más info</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="iconic-quotes-box">
+  <h2 class="subtitle">Frases Icónicas</h2>
+  <ul>
+    <li>"Estoy teniendo un amigo para cenar."</li>
+    <li>"La cortesía es un gesto que la mayoría de los monstruos olvida."</li>
+    <li>"¿Crees que puedes mirar dentro de mí como si fueras Dios?"</li>
+    <li>"La locura es contagiosa."</li>
+    <li>"El canibalismo es la expresión más íntima de afecto."</li>
+  </ul>
+</section>
+
+
+<section class="section">
+  <h2 class="subtitle">Temporadas</h2>
+
+  <div class="season">
+    <h3>Temporada 1</h3>
+    <p><strong>13 episodios</strong> | <em>2013</em></p>
+    <p>Will Graham investiga una serie de asesinatos con la ayuda del Dr. Hannibal Lecter, sin saber que él es el asesino.</p>
+  </div>
+
+  <div class="season">
+    <h3>Temporada 2</h3>
+    <p><strong>13 episodios</strong> | <em>2014</em></p>
+    <p>Will Graham está en prisión acusado de los crímenes de Hannibal, mientras este último se convierte en su psiquiatra.</p>
+  </div>
+
+  <div class="season">
+    <h3>Temporada 3</h3>
+    <p><strong>13 episodios</strong> | <em>2015</em></p>
+    <p>Hannibal huye a Europa mientras Will y Jack lo persiguen, llevando a un enfrentamiento final.</p>
+  </div>
+</section>
+
+<section class="fun-facts-box">
+  <h2 class="subtitle">Datos Curiosos</h2>
+  <ul>
+    <li>La serie fue cancelada después de 3 temporadas a pesar de la aclamación de la crítica.</li>
+    <li>Mads Mikkelsen estudió a cirujanos reales para preparar su papel como Hannibal.</li>
+    <li>Bryan Fuller, el creador, planeaba 7 temporadas que cubrirían todas las novelas de Hannibal Lecter.</li>
+    <li>Cada comida que Hannibal prepara en la serie fue diseñada por un chef profesional.</li>
+    <li>El diseño de producción usa el color rojo para simbolizar sangre y violencia.</li>
+  </ul>
+</section>
+
+<section class="songs-section">
+  <h2 class="subtitle no-border">canciones destacadas</h2>
+
+  <div class="song-card animate">
+    <audio controls>
+      <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+    <p class="song-title">
+      <i class="fas fa-music"></i> "Love Crime - Siouxsie"
+    </p>
+  </div>
+
+  <div class="song-card animate">
+    <audio controls>
+      <source src="cancion2.mp3" type="audio/mpeg">
+    </audio>
+    <p class="song-title">
+      <i class="fas fa-music"></i> "Goldberg Variations, BWV 988"
+    </p>
+  </div>
+
+  <div class="song-card animate">
+    <audio controls>
+      <source src="cancion 3.mp3" type="audio/mpeg">
+    </audio>
+    <p class="song-title">
+      <i class="fas fa-music"></i> "entre canivales, soda estereo"
+    </p>
+  </div>
+</section>
+
+<section class="video-section">
+  <h2 class="video-title">Video Informativo</h2>
+  <div class="video-container">
+    <video controls poster="preview.jpg">
+      <source src="Video .mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </div>
+</section>
+
+<footer class="footer-text">
+  <p>"Un agradable festín."</p>
+  <small>© 2025 HannibalVerse – Todos los derechos reservados</small>
+</footer>
+
+
+<!-- MODALES -->
+<div id="hannibal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('hannibal')">&times;</span>
+        <h2>Hannibal Lecter</h2>
+        <p>Hannibal es un hombre sofisticado, amante del arte y la buena comida... que resulta ser un asesino caníbal extremadamente inteligente. Su relación con Will es compleja y fascinante.</p>
+    </div>
+</div>
+
+<div id="will" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('will')">&times;</span>
+        <h2>Will Graham</h2>
+        <p>Un investigador del FBI con una habilidad única: puede “ponerse en el lugar” de los asesinos y recrear mentalmente sus crímenes. Esta empatía extrema lo hace muy valioso para resolver casos, pero también lo vuelve vulnerable emocional y psicológicamente, sobre todo al entrar en contacto con Hannibal.</p>
+    </div>
+</div>
+
+<div id="alana" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('alana')">&times;</span>
+        <h2>Alana Bloom</h2>
+        <p>Profesora de psicología, con gran sensibilidad emocional. Está atrapada entre su lealtad profesional y sus sentimientos hacia Hannibal y Will.</p>
+    </div>
+</div>
+
+<div id="jack" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('jack')">&times;</span>
+        <h2>Jack Crawford</h2>
+        <p>Jefe de la unidad de Ciencias del Comportamiento del FBI. Recluta a Will para que ayude en investigaciones complejas. Está decidido a atrapar a los asesinos, pero muchas veces toma decisiones que afectan emocional y mentalmente a su equipo, especialmente a Will.</p>
+    </div>
+</div>
+
+<!-- Abigail Hobbs -->
+<div id="abigail" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('abigail')">&times;</span>
+    <h2>Abigail Hobbs</h2>
+    <p>Hija de un asesino serial, queda atrapada entre la culpa, la manipulación de Hannibal y la protección de Will. Su historia está marcada por el trauma y la confusión sobre su propia naturaleza.</p>
+  </div>
+</div>
+
+<!-- Dr. Bedelia Du Maurier -->
+<div id="bedelia" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('bedelia')">&times;</span>
+    <h2>Dr. Bedelia Du Maurier</h2>
+    <p>Antigua terapeuta de Hannibal Lecter. Intelectualmente aguda y emocionalmente enigmática, guarda oscuros secretos sobre su relación con Hannibal y las cosas que ha presenciado.</p>
+  </div>
+</div>
+
+<!-- Freddie Lounds -->
+<div id="freddie" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('freddie')">&times;</span>
+    <h2>Freddie Lounds</h2>
+    <p>Periodista sensacionalista y editora de TattleCrime. Persistente y manipuladora, su búsqueda de primicias la pone en peligro, especialmente cuando cruza el camino de Hannibal.</p>
+  </div>
+</div>
+
+<!-- Beverly Katz -->
+<div id="beverly" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('beverly')">&times;</span>
+    <h2>Beverly Katz</h2>
+    <p>Especialista forense del FBI. Inteligente, leal y meticulosa, es una de las primeras en sospechar de Hannibal, lo que finalmente la lleva a un destino trágico.</p>
+  </div>
+</div>
+
+<!-- Brian Zeller -->
+<div id="zeller" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('zeller')">&times;</span>
+    <h2>Brian Zeller</h2>
+    <p>Miembro del equipo forense. Suele aportar comentarios sarcásticos y una perspectiva lógica a las investigaciones, contrastando con la intensidad emocional de sus colegas.</p>
+  </div>
+</div>
+
+<!-- Jimmy Price -->
+<div id="jimmy" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('jimmy')">&times;</span>
+    <h2>Jimmy Price</h2>
+    <p>Experto en análisis técnico y biología. Parte del equipo del FBI con Beverly y Zeller, aporta conocimientos de entomología y química para descifrar pistas forenses.</p>
+  </div>
+</div>
+
+<!-- Peter Bernardone -->
+<div id="peter" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('peter')">&times;</span>
+    <h2>Peter Bernardone</h2>
+    <p>Hombre con discapacidad mental acusado injustamente de asesinato. Su bondad y vulnerabilidad despiertan la compasión de Will, quien lo protege y lo ve como un reflejo de su lucha interna.</p>
+  </div>
+</div>
+
+    <script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+        });
+    }
+    </script>
+</body>
+</html>
